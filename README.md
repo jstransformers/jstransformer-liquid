@@ -1,30 +1,25 @@
-# JSTransformer Boilerplate
+# jstransformer-liquid
 
-Use JSTransformer Boilerplate to create and update transformers.
+[Liquid for Node.js](https://github.com/sirlantis/liquid-node) support for [JSTransformers](http://github.com/jstransformers).
 
-1. Visit [the Boilerplate Wiki](https://github.com/jstransformers/boilerplate/wiki) on how to get started
-2. Remove this top notice from any transformers
-
-# jstransformer-foo
-
-[Foo](http://example.com) support for [JSTransformers](http://github.com/jstransformers).
-
-[![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-foo/master.svg)](https://travis-ci.org/jstransformers/jstransformer-foo)
-[![Coverage Status](https://img.shields.io/coveralls/jstransformers/jstransformer-foo/master.svg)](https://coveralls.io/r/jstransformers/jstransformer-foo?branch=master)
-[![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-foo/master.svg)](http://david-dm.org/jstransformers/jstransformer-foo)
-[![NPM version](https://img.shields.io/npm/v/jstransformer-foo.svg)](https://www.npmjs.org/package/jstransformer-foo)
+[![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-liquid/master.svg)](https://travis-ci.org/jstransformers/jstransformer-liquid)
+[![Coverage Status](https://img.shields.io/coveralls/jstransformers/jstransformer-liquid/master.svg)](https://coveralls.io/r/jstransformers/jstransformer-liquid?branch=master)
+[![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-liquid/master.svg)](http://david-dm.org/jstransformers/jstransformer-liquid)
+[![NPM version](https://img.shields.io/npm/v/jstransformer-liquid.svg)](https://www.npmjs.org/package/jstransformer-liquid)
 
 ## Installation
 
-    npm install jstransformer-foo
+    npm install jstransformer-liquid
 
 ## API
 
 ```js
-var foo = require('jstransformer')(require('jstransformer-foo'))
+var liquid = require('jstransformer')(require('jstransformer-liquid'))
 
-foo.render('blah').body
-//=> 'blah'
+liquid.render('Hello {{ name }}!', {
+  name: 'World'
+}).body
+//=> 'Hello, World!'
 ```
 
 ## License

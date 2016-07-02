@@ -1,1 +1,14 @@
-{}
+{
+  "products": [
+    {
+      "name": "Vacuum",
+      "price": "$500",
+      "description": "It sucks."
+    },
+    {
+      "name": "Rent",
+      "price": "$9000",
+      "description": "It's too damn high."
+    }
+  ]
+}

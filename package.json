@@ -1,7 +1,7 @@
 {
-  "name": "jstransformer-foo",
+  "name": "jstransformer-liquid",
   "version": "0.0.0",
-  "description": "Foo support for JSTransformers.",
+  "description": "Liquid for Node.js support for JSTransformers.",
   "keywords": [
     "jstransformer"
   ],
@@ -20,11 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-foo.git"
+    "url": "https://github.com/jstransformers/jstransformer-liquid.git"
   },
   "author": {
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "liquid-node": "^2.6.1"
+  }
 }
