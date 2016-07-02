@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-liquid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Liquid for Node.js support for JSTransformers.",
   "keywords": [
     "jstransformer"
