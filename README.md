@@ -16,10 +16,11 @@
 ```js
 var liquid = require('jstransformer')(require('jstransformer-liquid'))
 
-liquid.render('Hello {{ name }}!', {
+liquid.renderAsync('Hello {{ name }}!', {
   name: 'World'
-}).body
-//=> 'Hello, World!'
+}).then(function (result) {
+  //=> 'Hello, World!'
+}
 ```
 
 ## License
