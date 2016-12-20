@@ -1,11 +1,12 @@
-'use strict';
+'use strict'
 
 var extend = require('extend-shallow')
 var Liquid = require('liquid-node')
-var engine = new Liquid.Engine
 
-exports.name = 'liquid';
-exports.outputFormat = 'html';
+var engine = new Liquid.Engine()
+
+exports.name = 'liquid'
+exports.outputFormat = 'html'
 
 exports.renderAsync = function (str, options, locals) {
   return engine.parseAndRender(str, extend({}, options, locals))

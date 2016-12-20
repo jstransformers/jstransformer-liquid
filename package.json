@@ -4,7 +4,7 @@
     "liquid-node": "^2.6.1"
   },
   "name": "jstransformer-liquid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Liquid for Node.js support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -13,14 +13,16 @@
     "index.js"
   ],
   "devDependencies": {
-    "test-jstransformer": "^1.0.0"
+    "test-jstransformer": "^1.0.0",
+    "xo": "^0.17.1"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
-    "test": "test-jstransformer"
+    "test": "test-jstransformer",
+    "posttest": "xo --space --no-semicolon index.js"
   },
   "engines": {
-    "node": ">=0.10.36"
+    "node": ">=4"
   },
   "repository": {
     "type": "git",
