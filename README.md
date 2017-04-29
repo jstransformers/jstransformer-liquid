@@ -1,5 +1,7 @@
 # jstransformer-liquid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-liquid.svg)](https://greenkeeper.io/)
+
 [Liquid for Node.js](https://github.com/sirlantis/liquid-node) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-liquid/master.svg)](https://travis-ci.org/jstransformers/jstransformer-liquid)
