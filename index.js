@@ -1,9 +1,9 @@
 'use strict'
 
-var extend = require('extend-shallow')
-var Liquid = require('liquid-node')
+const extend = require('extend-shallow')
+const Liquid = require('liquid-node')
 
-var engine = new Liquid.Engine()
+const engine = new Liquid.Engine()
 
 exports.name = 'liquid'
 exports.outputFormat = 'html'
